@@ -34,7 +34,7 @@ public class MailTest {
         try{   	
             msg.setSentDate(new Date());   //편지보낸시간
             InternetAddress from = new InternetAddress() ;//수신자의 메일을 생성
-            from = new InternetAddress("dongi1212@naver.com","롯데월드"); //발신자 아이디 (맨밑에 적은 아이디랑 같은 아이디)
+            from = new InternetAddress("id@naver.com","롯데월드"); //발신자 아이디 (맨밑에 적은 아이디랑 같은 아이디)
             							//발신자아이디 , 발신자명
             // 이메일 발신자
             msg.setFrom(from);
@@ -70,8 +70,8 @@ class MyAuthentication extends Authenticator {
     PasswordAuthentication pa;
     public MyAuthentication(){
          
-        String id = "dongi1212@naver.com";  //네이버 이메일 아이디
-        String pw = "gozldgkwlaktlqkf";       //네이버 비밀번호 이거적어야 메일발송됨.(컨트롤센터)
+        String id = "id@naver.com";  //네이버 이메일 아이디
+        String pw = "password";       //네이버 비밀번호 이거적어야 메일발송됨.(컨트롤센터)
  
         // ID와 비밀번호를 입력한다.
        
